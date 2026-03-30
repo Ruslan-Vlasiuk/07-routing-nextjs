@@ -4,7 +4,7 @@ import NotesClient from "./Notes.client";
 import type { NoteTag } from "../../../../types/note";
 
 interface FilterPageProps {
-  params: Promise<{ tag?: string[] }>;
+  params: Promise<{ slug?: string[] }>;
 }
 
 export default async function FilterPage({ params }: FilterPageProps) {

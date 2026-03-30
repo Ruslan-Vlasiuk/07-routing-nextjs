@@ -8,8 +8,8 @@ interface FilterPageProps {
 }
 
 export default async function FilterPage({ params }: FilterPageProps) {
-  const { tag } = await params;
-  const tagValue = tag?.[0];
+  const { slug } = await params;
+  const tagValue = slug?.[0];
   const activeTag = tagValue === "all" ? undefined : (tagValue as NoteTag | undefined);
 
   const queryClient = new QueryClient();

@@ -13,7 +13,7 @@ export default function Header() {
             <Link href="/" className={css.navigationLink}>Home</Link>
           </li>
           <li className={css.navigationItem}>
-            <Link href="/notes" className={css.navigationLink}>Notes</Link>
+            <Link href="/notes/filter/all" className={css.navigationLink}>Notes</Link>
           </li>
         </ul>
       </nav>
